@@ -12,5 +12,5 @@ def solution(p: float, x: np.array) -> tuple:
     # Не меняйте название функции и её аргументы
     alpha = 1 - p
     loc = max(x)
-    return loc, \
-           (loc - 0.083) * (p**(1/len(x)))+0.083
+    return max(x), \
+           (max(x) - 0.083) / (p**(1/len(x)))+0.083
